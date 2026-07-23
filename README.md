@@ -2,8 +2,8 @@
 ### Image Preprocessing Degrades Vision-LLM Transcription of Legible Documents
 
 A controlled pilot: 30 CORD-v2 receipts × 4 preprocessing conditions × 4 vision-language
-models × 3 repeats = 1,440 transcriptions. The classical OCR reflex — binarize, normalize,
-upscale before recognition — is counterproductive for legible documents read by modern VLMs.
+models × 3 repeats = 1,440 transcriptions. The classical OCR reflex of binarizing, normalizing,
+and upscaling before recognition is counterproductive for legible documents read by modern VLMs.
 
 📄 **Paper:** [`paper/main.pdf`](paper/main.pdf) · Patrick S. Keough · pilot preprint in preparation
 
@@ -14,7 +14,7 @@ upscale before recognition — is counterproductive for legible documents read b
 - **Binarization is the worst offender:** paired +1.163 CER (95% CI [0.512, 2.390],
   d_z = 0.468, p = 0.004).
 - **Degradation amplifies non-determinism:** within-cell SD grows from 0.051 (raw) to
-  1.060 (binarized) at temperature 0 — hosted-model instability is input-dependent.
+  1.060 (binarized) at temperature 0, showing hosted-model instability is input-dependent.
 - A structured-field recall check reproduces the ranking without the CER metric, and the
   LLM judge auto-calibrates to κ = 0.70 against hand scoring with zero human labels.
 
@@ -32,7 +32,7 @@ pass; jiwer-vs-hand CER agreement to ~7e-15.
 ## Context
 
 An afternoon-scale pilot from a research program auditing LLM behavior with psychometric
-method — conducted as a live demonstration for Eric Kwon of AI-orchestrated research
+method, conducted as a live demonstration for Eric Kwon of AI-orchestrated research
 practice (see the paper's acknowledgments).
 Program index: [Research_Collection_Patrick_Keough](https://github.com/pskeough/Research_Collection_Patrick_Keough).
 
