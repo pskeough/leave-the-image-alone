@@ -22,7 +22,7 @@ and upscaling before recognition is counterproductive for legible documents read
 
 ```
 paper/           manuscript source + compiled PDF + figures
-figure_scripts/  scripts that generate the figures
+
 RESULTS.md · STATISTICAL_SUPPLEMENT.md · INTERPRETATION.md   verified stats reports
 ```
 
